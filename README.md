@@ -30,7 +30,7 @@ helm create webapp-chart
 ```
 1-Modify the templates in helm/templates.
 2-Update the values.yaml file with necessary values like image repository and tag
-``bash
+```bash
 image:
   repository: myname/webapp
   tag: latest
@@ -39,6 +39,7 @@ service:
   port: 3000
 ```
 3- Now deploy it to minikube:
+
 ```bash
 helm install webapp ./webapp-chart
 ```
