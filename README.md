@@ -80,6 +80,6 @@ jobs:
 ```
 
 ### Testing:
-After deployment, visit http://<minikube-ip>:<nodeport> to see the running webapp
+After deployment, visit `http://<minikube-ip>:<nodeport>` to see the running webapp
 
 
