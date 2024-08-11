@@ -1,0 +1,20 @@
+replicaCount: 2
+
+image:
+  repository: myname/webapp
+  tag: latest
+
+service:
+  type: NodePort
+  port: 80
+
+env:
+  NODE_ENV: production
+
+resources:
+  limits:
+    cpu: "500m"
+    memory: "256Mi"
+  requests:
+    cpu: "200m"
+    memory: "128Mi"
