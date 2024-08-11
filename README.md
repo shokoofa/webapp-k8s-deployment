@@ -18,6 +18,10 @@ This is an open-source webapp for a teck-challenge:
 ## Setup Instructions
 
 ### Build and Run Docker Container
+#### Firs of all cd to the dockerfile directory and build the image from it and run a container from image
+
 ```bash
-docker build -t yourusername/yourwebapp .
-docker run -p 3000:3000 yourusername/yourwebapp
+docker build -t myname/webapp .
+docker run -p 3000:3000 myname/yourwebapp
+
+### Build Helm Charts to Deploy to Kubernetes
